@@ -18,7 +18,7 @@ def filter_finding_section(lines: List[str]) -> List[Finding]:
     findings: List[Finding] = []
     in_findings_section = False
     for line in lines:
-        if line.strip() == "# Findings":
+        if line.strip().lower() == "# findings":
             in_findings_section = True
             continue
 

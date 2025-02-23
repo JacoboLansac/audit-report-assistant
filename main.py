@@ -20,7 +20,7 @@ def issues(report_path: Path):
 
 @app.command()
 def table(report_path: Path):
-    logger.info(f"Generating summary table: {report_path}")
+    logger.info(f"Generating summary table from report: {report_path}")
     table_lines = parser.generate_table(report_path)
 
     for line in table_lines:
